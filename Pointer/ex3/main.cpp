@@ -9,9 +9,9 @@ void swap(int *a, int *b) {
   *b = temp;
 }
 
-int main() {
-    
+int main() {    
   int i = 5;
+  
   while (i > 0) {
     cout << i << endl;
     i--;
