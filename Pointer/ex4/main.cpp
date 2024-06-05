@@ -27,14 +27,14 @@ int main() {
   cout << "\n------------------------------" << endl;
 
   vector<string> students = {"Larry", "Moe", "Curly"};
-  vector<string> *vector_ptr {nullptr};
+  vector<string> *std_ptr {nullptr};
   
-  vector_ptr = &students;
+  std_ptr = &students;
   
-  cout << "First stooge: " << (*vector_ptr).at(0) << endl;    // Larry
+  cout << "First student: " << (*std_ptr).at(0) << endl;    // Larry
   
   cout << "Students: ";
-  for (auto st: *vector_ptr)  cout << st << " ";
+  for (auto st: *std_ptr)  cout << st << " ";
   cout << endl;
   
 
