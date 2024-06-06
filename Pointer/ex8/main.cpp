@@ -4,20 +4,20 @@
 
 using namespace std;
 
-void display(const vector<string> *const  vec) { 
-  for (auto str: *vec)   cout << str << " ";
+void display(const vector<string> *const vec) { 
+  for (auto str: *vec) cout << str << " ";
   cout << endl;
 }
 
 void display(int *array, int preventValue) { 
-  while (*array != preventValue)   cout << *array++ << " "; 
+  while (*array != preventValue) cout << *array++ << " "; 
   cout << endl; 
 }
 
 void mutationVector(vector<string> *vec) {  
   int index = 0; 
   for (auto str: *vec) { 
-    if (str.empty())   (*vec).at(index) = "Tidak_Boleh_Kosong"; 
+    if (str.empty()) (*vec).at(index) = "Tidak_Boleh_Kosong"; 
     index += 1;     
   } 
 }
