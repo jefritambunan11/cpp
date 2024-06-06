@@ -1,8 +1,6 @@
-
 #include <iostream>
 
 using namespace std;
-
 
 int *applyAll(const int *const arr1, size_t size1, const int *const arr2, size_t size2) {
   int position = 0;
