@@ -36,3 +36,14 @@ int main() {
 
   return 0;
 }
+
+/*  
+Aplikasi membuat array otomatis
+Masukan angka untuk dimasukan ke array ?
+100
+Berapa kali nilai 100 akan dimasukan ke array ?
+5
+
+--------------------------------------
+100 100 100 100 100
+*/
