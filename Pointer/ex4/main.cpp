@@ -1,4 +1,3 @@
-
 #include <iostream>
 #include <string>
 #include <vector>
@@ -27,7 +26,7 @@ int main() {
   cout << "\n------------------------------" << endl;
 
   vector<string> students = {"Larry", "Moe", "Curly"};
-  vector<string> *std_ptr {nullptr};
+  vector<string> *std_ptr = nullptr;
   
   std_ptr = &students;
   
