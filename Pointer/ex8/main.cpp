@@ -17,7 +17,7 @@ void display(int *array, int preventValue) {
 void mutationVector(vector<string> *vec) {  
   int index = 0; 
   for (auto str: *vec) { 
-    if (str.empty()) (*vec).at(index)   = "Tidak_Boleh_Kosong"; 
+    if (str.empty())   (*vec).at(index) = "Tidak_Boleh_Kosong"; 
     index += 1;     
   } 
 }
