@@ -16,7 +16,7 @@ int main() {
   
   cout << "Value: " << value << endl;
 
-  // if it's not a pointer, sign it with reference symbol
+  // if it's not a pointer, sign it with the reference symbol
   double_data(&value); 
 
   cout << "Value 1 : " << value << endl;
