@@ -17,15 +17,15 @@ void display(const int *const array, size_t size) {
 int main() {
   int *myArray = nullptr;
   size_t size;
-  int init_value = 0;
+  int initValue = 0;
   
   cout << "Aplikasi membuat array otomatis \n";
   cout << "Masukan angka untuk dimasukan ke array ? \n";
-  cin >> init_value;
-  cout << "Berapa kali nilai " << init_value << " akan dimasukan ke array ? \n";
+  cin >> initValue;
+  cout << "Berapa kali nilai " << initValue << " akan dimasukan ke array ? \n";
   cin >> size;
   
-  myArray = createArray(size, init_value);
+  myArray = createArray(size, initValue);
   cout << "\n--------------------------------------" << endl;
 
   display(myArray, size);
