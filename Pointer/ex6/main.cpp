@@ -1,5 +1,3 @@
-
-
 #include <iostream>
 
 using namespace std;
@@ -58,7 +56,7 @@ int main() {
   cout << "In the string " << name << ",  " << *char_ptr2 << " is " << (char_ptr2 - char_ptr1) << " characters away from " <<  *char_ptr1  << endl; 
 
   // char_ptr2 - char_ptr1 == 2 - 4 = 2
-  
+
   
   cout << endl;
   return 0;
