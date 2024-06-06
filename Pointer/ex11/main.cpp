@@ -7,7 +7,7 @@ int *applyAll(const int *const arr1, size_t size1, const int *const arr2, size_t
   int *newArray = 0;  
   newArray = new int[size1 * size2];  
   for (size_t i = 0; i < size2; ++i) {
-    for (size_t j = 0; j< size1; ++j) {
+    for (size_t j = 0; j < size1; ++j) {
       newArray[position] = arr1[j] * arr2[i];
       ++position;
     }
