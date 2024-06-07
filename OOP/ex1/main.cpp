@@ -43,7 +43,7 @@ int main() {
 	frankAccount.deposit(1000.0);
 	frankAccount.withdraw(500.0);
 	cout << "Frank's account : " <<  frankAccount.balance << endl;
-		
+
 	Player frank;
 	frank.name = "Frank";
 	frank.health = 100;
@@ -57,16 +57,16 @@ int main() {
 	jimi.xp = 12;
 	jimi.talk("Hi there");		
 	cout << "Frank's health : " <<  jimi.health << endl;
-	
+
 	Player multiPlayer[] = {
 		frank, 
 		jimi
 	};
-	
+
 	vector<Player> playerAsVector = {};
 	playerAsVector.push_back(frank);
 	playerAsVector.push_back(jimi);
-		
+
 	Player *playerAsPtr = nullptr;
 	playerAsPtr = new Player;
 	(*playerAsPtr).name = "Frank";
@@ -74,7 +74,7 @@ int main() {
 	(*playerAsPtr).xp = 12;
 	(*playerAsPtr).talk("Hi there");	
 	playerAsPtr->talk("Hi there");	
-	
+
 	delete playerAsPtr;
 
 	return 0;
