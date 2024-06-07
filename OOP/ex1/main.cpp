@@ -27,12 +27,12 @@ public:
 
 	void deposit(double bal) {
 		balance += bal; 
-		cout << "In deposit" << endl; 
+		cout << "In deposit " << bal << endl; 
 	}
 
 	void withdraw(double bal) {
 		balance -= bal; 
-		cout << "In withdraw" << endl;  
+		cout << "In withdraw " << bal << endl;  
 	}
 };
 
@@ -81,8 +81,8 @@ int main() {
 }
 
 /*
-In deposit
-In withdraw
+In deposit 1000
+In withdraw 500
 Frank's account : 5500
 Frank says Hi there
 Frank's health : 100
