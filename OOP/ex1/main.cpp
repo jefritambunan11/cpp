@@ -25,12 +25,12 @@ public:
 	string name = "";
 	double balance = 0.0;    
 
-	bool deposit(double bal) {
+	void deposit(double bal) {
 		balance += bal; 
 		cout << "In deposit" << endl; 
 	}
 
-	bool withdraw(double bal) {
+	void withdraw(double bal) {
 		balance -= bal; 
 		cout << "In withdraw" << endl;  
 	}
@@ -42,18 +42,21 @@ int main() {
 	frankAccount.balance = 5000.0;
 	frankAccount.deposit(1000.0);
 	frankAccount.withdraw(500.0);
+	cout << "Frank's account : " <<  frankAccount.balance << endl;
 		
 	Player frank;
 	frank.name = "Frank";
 	frank.health = 100;
 	frank.xp = 12;
 	frank.talk("Hi there");
+	cout << "Frank's health : " <<  frank.health << endl;
 
 	Player jimi;
 	jimi.name = "Frank";
-	jimi.health = 100;
+	jimi.health = 80;
 	jimi.xp = 12;
 	jimi.talk("Hi there");		
+	cout << "Frank's health : " <<  jimi.health << endl;
 	
 	Player multiPlayer[] = {
 		frank, 
@@ -76,3 +79,15 @@ int main() {
 
 	return 0;
 }
+
+/*
+In deposit
+In withdraw
+Frank's account : 5500
+Frank says Hi there
+Frank's health : 100
+Frank says Hi there
+Frank's health : 80
+Frank says Hi there
+Frank says Hi there
+*/
