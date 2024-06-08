@@ -13,9 +13,9 @@ public:
     cout << name << " says " << text_to_say << endl;  
   }
   bool is_dead() {
-		if (health == 0) return true;
-		else return false;
-	}
+    if (health == 0) return true;
+    else return false;
+  }
 };
 
 int main() {
