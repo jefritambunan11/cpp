@@ -73,7 +73,7 @@ int main() {
 	playerAsPtr->health = 100;
 	(*playerAsPtr).xp = 12;
 	(*playerAsPtr).talk("Hi there");	
-	playerAsPtr->talk("Hi there");	
+	playerAsPtr->talk("Lets eat");	
 
 	delete playerAsPtr;
 
@@ -89,5 +89,5 @@ Frank's health : 100
 Frank says Hi there
 Frank's health : 80
 Frank says Hi there
-Frank says Hi there
+Frank says Lets eat
 */
