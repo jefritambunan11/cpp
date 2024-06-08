@@ -14,6 +14,12 @@ public:
   std::string getterName() {
     return name;
   }
+  int getterHealth() {
+    return health;
+  }
+  int getterXp() {
+    return xp;
+  }
 };
 
 Player::Player() : name("None"), health(0), xp(0) {}
@@ -27,7 +33,11 @@ int main() {
 
   std::cout << empty.getterName() << std::endl;
   std::cout << frank.getterName() << std::endl;
-  std::cout << villain.getterName() << std::endl;
+  std::cout << frank.getterHealth() << std::endl;
+  std::cout << frank.getterXp() << std::endl;
+  std::cout << villain.getterName() << std::endl;  
+  std::cout << villain.getterHealth() << std::endl;
+  std::cout << villain.getterXp() << std::endl;
 
   return 0;
 }
@@ -35,5 +45,9 @@ int main() {
 /*  
 None
 Frank
+0
+0
 Villain
+100
+55
 */
